@@ -1,0 +1,18 @@
+.compare-sql-ok {
+    color: green;
+    font-weight: bold;
+}
+.compare-sql-nok {
+    color: red;
+    font-weight: bold;
+}
+
+a.nav-tab {
+    text-transform: capitalize;
+}
+
+a.nav-tab.nav-tab-help {
+    float: right;
+    background: #fe5000;
+    color: white;
+}

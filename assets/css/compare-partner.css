@@ -1,0 +1,397 @@
+/**
+AAWP Styles
+ */
+.compare-partners {
+    clear: both;
+}
+
+.compare_partner_logo {
+    width: 50px;
+    margin-right: 5px;
+}
+
+.compare-partners {
+    margin-bottom: 20px;
+}
+
+p.compare-price {
+    margin-bottom: 10px;
+}
+
+/**
+Horizontal ShortCode
+ */
+
+.main-row {
+    display: flex;
+}
+
+.compare_basic_sc .product-price {
+    width: auto;
+}
+
+.compare_basic_sc_left {
+    width: 33%;
+}
+
+.compare_basic_right {
+    padding-left: 30px;
+}
+
+.price-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.compare_basic_sc_partner_price {
+    text-align: center;
+}
+
+h4.compare_sc_title {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    .main-row {
+        display: block;
+    }
+
+    .compare_basic_sc_left,
+    .compare_basic_right {
+        width: auto;
+    }
+}
+
+/**
+Freemius
+ */
+#packages ul > li article.featured {
+    width: 50% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/**
+Cloak Link
+ */
+.atc:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/**
+General style
+ */
+.aawp-product--horizontal .compare-price {
+    display: block;
+    width: 100%;
+}
+
+.aawp-product--horizontal .compare-price-partner {
+    display: block;
+}
+
+.img-partner,
+.product-price {
+    float: left;
+}
+
+.product-price {
+    width: 44%;
+}
+
+button.atc.btn-compare {
+    display: block;
+    width: 30%;
+    float: left;
+}
+
+.compare-price .compare-price-partner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0px;
+    border-left: 0 none;
+    border-right: 0 none;
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 425px) {
+    .compare-price .compare-price-partner {
+        padding: 0 5px;
+    }
+}
+
+.compare-price-partner {
+    border-top: 1px solid #E5E5E5;
+}
+
+.compare-price-partner.compare-price-amz {
+    border: none;
+}
+
+.compare_partner_name p{
+    margin: 0;
+}
+.atc {
+    height: 60px;
+    line-height: 59px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+}
+
+.compare-price-partner:first-child .product-price {
+    font-weight: bold;
+}
+
+.aawp-product--vertical .img-partner,
+.aawp-product--vertical .product-price {
+    float: left;
+}
+
+.aawp table.aawp-table th.aawp-table__th-title,
+.aawp table.aawp-table td.aawp-table__th-title,
+.aawp table.aawp-table th.aawp-table__td-title,
+.aawp table.aawp-table td.aawp-table__td-title {
+    max-width: 150px;
+    text-align: left;
+}
+
+img.logo-amazon {
+    width: 30px;
+}
+
+th.aawp-table__th-links {
+    width: 400px;
+}
+
+@media screen and (min-width: 1025px) {
+    table .product-price {
+        width: 60%;
+        text-align: center;
+    }
+}
+
+.img-partner {
+    width: 30px;
+}
+
+@media screen and (max-width: 425px) {
+    .product-price {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+/* Credits:
+    This bit of code: Exis | exisweb.net/responsive-tables-in-wordpress
+    Original idea: Dudley Storey | codepen.io/dudleystorey/pen/Geprd */
+
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+
+    tr td:first-child {
+        background: #f0f0f0;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    tbody td {
+        display: block;
+        text-align: center;
+    }
+
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .product-price {
+        width: 44%;
+    }
+
+}
+
+.compare-price button {
+    min-width: auto;
+}
+
+@media screen and (max-width: 990px) {
+    .aawp table.aawp-table td.aawp-table__td-title {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+.aawp-tb--mobile.aawp-tb--hide-labels .aawp-tb__data,
+.aawp-tb--mobile.aawp-tb--hide-mobile-labels .aawp-tb__data {
+    display: table;
+}
+
+@media screen and (max-width: 769px) {
+    .aawp table.aawp-table td:before {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .product-price {
+        width: auto;
+        margin-left: 10%;
+    }
+
+    table .product-price {
+        width: 44%;
+    }
+}
+
+/**
+Compare Price Shortcode
+ */
+
+/*.compare_sc.compare_price_main {
+    width: 50%;
+}*/
+
+.compare_price-partner {
+    min-height: 60px;
+}
+
+.compare_partner_logo img {
+    width: 50px;
+}
+
+.compare_price,
+.compare_partner_name,
+.compare_partner_logo {
+    float: left;
+}
+
+button.compare_buy {
+    float: right;
+}
+
+.compare_partner_logo {
+    text-align: left;
+}
+
+.compare_partner_name,
+.compare_price {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.compare_sc .product-price {
+    width: 25%;
+}
+
+.compare_sc .compare_partner_name {
+    width: 50%;
+}
+
+/**
+Amz Shortcode
+ */
+.compare_basic_amz .price-box {
+    display: block;
+}
+
+/**
+Cap Shortcode
+ */
+
+.cap-sc {
+    border-top: 1px solid #e5e5e5;
+}
+
+.cap-sc .compare_price-partner {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 1em;
+    line-height: 2em;
+    min-height: 83px;
+}
+
+.cap-sc .compare_partner_name {
+    width: 50%;
+}
+
+@media screen and (max-width: 425px) {
+    .cap-sc .compare_partner_name {
+        display: none;
+    }
+
+    .cap-sc .compare_price {
+        width: 40%;
+    }
+}
+
+/**
+Popup Avis
+ */
+#popup {
+    display: none;
+}
+iframe.cap-amz-review {
+    min-height: 100vh;
+}
+
+#popup-fg {
+    max-width: 50%;
+    background: #ddd;
+    margin: 0 auto;
+    padding: 2em;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-radius: 1em;
+}
+
+#login {
+    float: right;
+    margin: -4em 4em;
+}
+
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+label {
+    margin-top: 1em;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.btn-compare {
+    padding: 0 10px;
+    line-height: 60px;
+    margin-top: -10px;
+}
